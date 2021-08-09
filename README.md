@@ -1,4 +1,4 @@
 # Vendrops
 
-Proje Vendrops şirketi backend case study amacı ile geliştirilmiştir. 
+Proje Vendrops şirketi için backend case study amacı ile geliştirilmiştir. 
 Db postgreSQL kullanılmıştır.
