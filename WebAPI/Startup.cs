@@ -35,11 +35,13 @@ namespace WebAPI
             services.AddSingleton<IUserDal, EfUserDal>();
             services.AddSingleton<IServiceService, ServiceManager>();
             services.AddSingleton<IServiceDal, EfServiceDal>();
+            services.AddSingleton<ICartService, CartManager>();
+            services.AddSingleton<ICartDal, EfCartDal>();
             services.AddSwaggerDocument(config =>
             {
                 config.PostProcess = (doc =>
                 {
-                    doc.Info.Title = "Konusarak Ogren Exam Project API";
+                    doc.Info.Title = "Vendrops API";
                     doc.Info.Version = "1.0.0";
                 });
             });
