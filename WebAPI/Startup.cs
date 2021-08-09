@@ -33,6 +33,8 @@ namespace WebAPI
             services.AddCors();
             services.AddSingleton<IUserService, UserManager>();
             services.AddSingleton<IUserDal, EfUserDal>();
+            services.AddSingleton<IServiceService, ServiceManager>();
+            services.AddSingleton<IServiceDal, EfServiceDal>();
             services.AddSwaggerDocument(config =>
             {
                 config.PostProcess = (doc =>

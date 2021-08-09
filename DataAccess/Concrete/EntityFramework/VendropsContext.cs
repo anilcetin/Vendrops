@@ -14,5 +14,6 @@ namespace DataAccess.Concrete.EntityFramework
         }
 
         public DbSet<User> users { get; set; }
+        public DbSet<Service> services { get; set; }
     }
 }
